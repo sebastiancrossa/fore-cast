@@ -18,6 +18,13 @@ class ViewController: UIViewController {
         // URL that connects to the API so we can retrieve data
         let url = URL(string: "http://sample.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1")!
         
+        // Creating a task for the URL so we can get data from it
+        let task = URLSession.shared.dataTask(with: url) {
+            data, response, error in
+            
+            
+        }
+        
     }
     
     override var prefersStatusBarHidden: Bool {

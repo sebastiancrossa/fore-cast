@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98290DE41EEE006200FD0F90 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98290DE01EEDFFF500FD0F90 /* Lato-Black.ttf */; };
+		98290DE51EEE006400FD0F90 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98290DE11EEE000100FD0F90 /* Lato-Bold.ttf */; };
+		98290DE61EEE006700FD0F90 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98290DE21EEE000100FD0F90 /* Lato-Light.ttf */; };
+		98290DE71EEE006900FD0F90 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98290DE31EEE000100FD0F90 /* Lato-Regular.ttf */; };
+		98290DE91EEE015000FD0F90 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98290DE81EEE015000FD0F90 /* Lato-Italic.ttf */; };
 		989820D21EEDB0D00070BCED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989820D11EEDB0D00070BCED /* AppDelegate.swift */; };
 		989820D41EEDB0D00070BCED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989820D31EEDB0D00070BCED /* ViewController.swift */; };
 		989820D71EEDB0D00070BCED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989820D51EEDB0D00070BCED /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98290DE01EEDFFF500FD0F90 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Black.ttf"; path = "../../../Graphics/Kauf_UI_Kit_Bundle_lite_byYebo/Fonts/Lato/Lato-Black.ttf"; sourceTree = "<group>"; };
+		98290DE11EEE000100FD0F90 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../Graphics/Kauf_UI_Kit_Bundle_lite_byYebo/Fonts/Lato/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		98290DE21EEE000100FD0F90 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../Graphics/Kauf_UI_Kit_Bundle_lite_byYebo/Fonts/Lato/Lato-Light.ttf"; sourceTree = "<group>"; };
+		98290DE31EEE000100FD0F90 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../Graphics/Kauf_UI_Kit_Bundle_lite_byYebo/Fonts/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		98290DE81EEE015000FD0F90 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../Graphics/Kauf_UI_Kit_Bundle_lite_byYebo/Fonts/Lato/Lato-Italic.ttf"; sourceTree = "<group>"; };
 		989820CE1EEDB0D00070BCED /* SimpleWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989820D11EEDB0D00070BCED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989820D31EEDB0D00070BCED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98290DDF1EEDFFE400FD0F90 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				98290DE01EEDFFF500FD0F90 /* Lato-Black.ttf */,
+				98290DE11EEE000100FD0F90 /* Lato-Bold.ttf */,
+				98290DE21EEE000100FD0F90 /* Lato-Light.ttf */,
+				98290DE31EEE000100FD0F90 /* Lato-Regular.ttf */,
+				98290DE81EEE015000FD0F90 /* Lato-Italic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		989820C51EEDB0D00070BCED = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +80,7 @@
 				989820D31EEDB0D00070BCED /* ViewController.swift */,
 				989820D51EEDB0D00070BCED /* Main.storyboard */,
 				989820D81EEDB0D00070BCED /* Assets.xcassets */,
+				98290DDF1EEDFFE400FD0F90 /* Resources */,
 				989820DA1EEDB0D00070BCED /* LaunchScreen.storyboard */,
 				989820DD1EEDB0D00070BCED /* Info.plist */,
 			);
@@ -124,8 +147,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98290DE41EEE006200FD0F90 /* Lato-Black.ttf in Resources */,
+				98290DE51EEE006400FD0F90 /* Lato-Bold.ttf in Resources */,
 				989820DC1EEDB0D00070BCED /* LaunchScreen.storyboard in Resources */,
+				98290DE61EEE006700FD0F90 /* Lato-Light.ttf in Resources */,
+				98290DE71EEE006900FD0F90 /* Lato-Regular.ttf in Resources */,
 				989820D91EEDB0D00070BCED /* Assets.xcassets in Resources */,
+				98290DE91EEE015000FD0F90 /* Lato-Italic.ttf in Resources */,
 				989820D71EEDB0D00070BCED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +328,7 @@
 				989820E21EEDB0D00070BCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
