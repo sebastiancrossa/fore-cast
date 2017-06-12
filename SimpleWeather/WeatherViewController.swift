@@ -16,12 +16,12 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
     }
     
     @IBAction func weatherSearch(_ sender: Any) {
         
-        forecastTitle.alpha = 1
+        forecastTitle.text = "Today's forecast is:"
         
         // URL that connects to the API so we can retrieve data
         // If user does not update the text field we will return an error
@@ -49,7 +49,9 @@ class WeatherViewController: UIViewController {
                                 
                                 // We dispatch so we don't have to constantly wait
                                 DispatchQueue.main.sync(execute: {
+                                    
                                     self.weatherDescription.text = description
+                                    
                                 })
                                 
                             }
@@ -74,8 +76,7 @@ class WeatherViewController: UIViewController {
         
         } else {
             
-            forecastTitle.alpha = 0
-            weatherDescription.text = "City required for search"
+            forecastTitle.text = "City required for search"
             
         }
         
