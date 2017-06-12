@@ -26,6 +26,7 @@ class WeatherViewController: UIViewController {
     @IBAction func weatherSearch(_ sender: Any) {
         
         forecastTitle.text = "Today's forecast is:"
+        view.endEditing(true)
         
         // URL that connects to the API so we can retrieve data
         // If user does not update the text field we will return an error
