@@ -16,7 +16,11 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+        // Looks for any single taps on screen
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         
+        view.addGestureRecognizer(tap)
     }
     
     @IBAction func weatherSearch(_ sender: Any) {
@@ -79,6 +83,14 @@ class WeatherViewController: UIViewController {
             forecastTitle.text = "City required for search"
             
         }
+        
+    }
+    
+    // This function will be called when user taps on screen
+    func dismissKeyboard() {
+        
+        // Will dismiss the keyboard
+        view.endEditing(true)
         
     }
     
