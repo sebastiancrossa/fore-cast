@@ -129,6 +129,14 @@
                                 <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xb7-rO-7if">
+                                <rect key="frame" x="325" y="616" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="help-icon"/>
+                                <connections>
+                                    <segue destination="Vqp-Ze-6EX" kind="show" id="ncq-z3-5l6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -142,12 +150,43 @@
             </objects>
             <point key="canvasLocation" x="856.79999999999995" y="138.98050974512745"/>
         </scene>
+        <!--Info View Controller-->
+        <scene sceneID="Qqr-1L-HoU">
+            <objects>
+                <viewController id="Vqp-Ze-6EX" customClass="InfoViewController" customModule="SimpleWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b47-66-RxI"/>
+                        <viewControllerLayoutGuide type="bottom" id="mPL-30-b6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rO0-Dg-tYA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundsc2" translatesAutoresizingMaskIntoConstraints="NO" id="5yz-2j-liO" userLabel="backgroundsc3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eZ-pn-doP">
+                                <rect key="frame" x="16" y="20" width="15" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back-arrow"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSV-Wx-ojH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="139"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="back-arrow" width="27" height="48"/>
         <image name="background" width="375" height="667"/>
         <image name="backgroundbuttonsc2" width="339" height="66"/>
         <image name="backgroundsc2" width="375" height="667"/>
         <image name="buttonbg" width="324" height="64"/>
+        <image name="help-icon" width="25" height="26"/>
         <image name="line" width="320" height="1"/>
     </resources>
 </document>

@@ -8,10 +8,6 @@
 
 import UIKit
 
-/*
- TODO: Fix bug where users can leave the space blank and it will search for the weather of London
-*/
-
 class WeatherViewController: UIViewController {
 
     @IBOutlet var userCityInput: UITextField!
