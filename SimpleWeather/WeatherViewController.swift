@@ -6,6 +6,7 @@
 //  Copyright © 2017 CROSS-A. All rights reserved.
 //
 
+import GoogleMobileAds
 import UIKit
 
 class WeatherViewController: UIViewController {
@@ -14,11 +15,23 @@ class WeatherViewController: UIViewController {
     @IBOutlet var forecastTitle: UILabel!
     @IBOutlet var weatherDescription: UILabel!
     
+    @IBOutlet var bannerView: GADBannerView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        // Ad
+        let request = GADRequest()
+        
+        bannerView.adUnitID = "ca-app-pub-7261983567202826/1378916397"
+        bannerView.rootViewController = self // Used to present an overlay when the ad is clicked. Set tot he view controller that currently contains the ad
+        
+        request.testDevices = [ kGADSimulatorID, "699ddb772c81091ad701c04a055764f6" ] // Creates test ads for the app
+        bannerView.load(request) // Makes a request to load an ad
+        
+        
         // Looks for any single taps on screen
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(WeatherViewController.dismissKeyboard))
         
         view.addGestureRecognizer(tap)
     }
@@ -66,7 +79,7 @@ class WeatherViewController: UIViewController {
                             } catch {
                                 
                                 // Error handling if JSON processing fails
-                                print("-- Weather Conditionshas encountered an error while tryiong to proccess the JSON file. (TIP: Double check if you are directing to a JSON file)")
+                                print("-- Weather Conditions has encountered an error while tryiong to proccess the JSON file. (TIP: Double check if you are directing to a JSON file)")
                                 
                             }
                             
